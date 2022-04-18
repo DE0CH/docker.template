@@ -1,8 +1,8 @@
 FROM ubuntu:latest
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update
-RUN apt-get install ubuntu-server -y
-RUN apt-get install build-essential -y
+RUN apt-get install -y ubuntu-server \
+	build-essential
 
 ARG UNAME=ubuntu
 ARG UID=1000
